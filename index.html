@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <!-- Name & About Me (ALWAYS visible) -->
+        <div class="intro">
+            <h1>Keerthana S N</h1>
+            <p>
+                BCA student passionate BCA student passionate about learning web development and building simple,
+                practical projects. I enjoy improving my skills step by step.
+            </p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button onclick="openBox('skills')">Skills</button>
+            <button onclick="openBox('resume')">Resume</button>
+            <button onclick="openBox('contact')">Email</button>
+            <button onclick="openBox('linkedin')">LinkedIn</button>
+        </div>
+
+        <!-- Popup Box -->
+        <div id="contentBox" class="content-box">
+            <span class="close" onclick="closeBox()">×</span>
+
+            <div id="skills" class="content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Business Analytics (Basics)</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+
+            <div id="resume" class="content">
+                <h2>Resume</h2>
+                <a href="Student CV Resume.pdf" target="_blank">📄 View Resume</a>
+            </div>
+
+            <div id="contact" class="content">
+                <h2>Email</h2>
+                <p>
+                    <a href="mailto:keerthana.sn.06@gmail.com">keerthana.sn.06@gmail.com</a>
+                </p>
+                <h2>Mobile number</h2>
+                <p>
+                    <a>7975013479</a>
+                </p>
+            </div>
+
+            <div id="linkedin" class="content">
+                <h2>LinkedIn</h2>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                    Visit Profile
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
